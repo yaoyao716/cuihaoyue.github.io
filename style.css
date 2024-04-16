@@ -1,0 +1,131 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-overflow: clip;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    text-align: left;
+    background-color:aliceblue;
+    padding: 10px;
+    text-decoration: none;
+    color:#fff
+}
+h1 {
+    font-size: 28px; /* 字体大小 */
+    color: #0a0909; /* 字体颜色 */
+    margin-bottom: 20px; /* 底部外边距 */
+    margin-top: 20px;
+    padding:10px
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+nav ul {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 20px;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font: size 24px;
+    font-style: normal;
+    color: #fff;
+    text-decoration: none;
+}
+a:link {
+    font-size: 20px;
+    text-decoration: underline;
+    color:black
+}
+a:visited {
+    text-decoration:underline;
+    color:cornflowerblue;
+}
+a:hover {
+    text-decoration: underline;
+    color:blue
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color:none;
+    color:#fff;
+    padding: 0px;
+    text-align: center;
+    margin-top: 400px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* Gallery styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 80%;
+    height:auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+    margin-right:10px
+    
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+body.主页 {
+    background-image: url('images/背景图.png'); /* 背景图片的路径 */
+    background-size: cover; /* 图片大小适应屏幕 */
+    background-position: center; /* 图片在屏幕中央 */
+    background-repeat: no-repeat; /* 不重复平铺 */
+    background-color: rgba(255, 255, 255, 0.5); /* 白色背景，透明度为 0.5 */
+}
+body.原创{
+    background-image: url('images/背景图-原创短篇.png'); /* 背景图片的路径 */
+    background-size: cover; /* 图片大小适应屏幕 */
+    background-position: center; /* 图片在屏幕中央 */
+    background-repeat: no-repeat; /* 不重复平铺 */
+}
+body.书评{
+    text-align: left;
+    background-image: url('images/背景图-简短书评.png'); /* 背景图片的路径 */
+    background-size: cover; /* 图片大小适应屏幕 */
+    background-position: center; /* 图片在屏幕中央 */
+    background-repeat: no-repeat; /* 不重复平铺 */
+}
+body.书架{
+    text-align: left;
+    background-color: beige;
+    background-image: url('images/背景图片-年度书架.png'); /* 背景图片的路径 */
+    background-size: cover; /* 图片大小适应屏幕 */
+    background-position: center; /* 图片在屏幕中央 */
+    background-repeat: no-repeat; /* 不重复平铺 */
+}
+
+body.联系{
+    background-image: url('images/背景图片-联系我们.png');
+    background-size: cover; /* 图片大小适应屏幕 */
+    background-position: center; /* 图片在屏幕中央 */
+    background-repeat: no-repeat; /* 不重复平铺 */
+}
